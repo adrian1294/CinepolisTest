@@ -1,5 +1,6 @@
-import{cinepolisHome} from '/Users/Ocañas/Documents/Curso Enroute/features/step/PageObject.js'
+import{ cinepolisPage } from './PageObject'
+import { module }  from './Setup'
 
-module.exports = function () {
+//module.exports = function () {
 
-}
+//}

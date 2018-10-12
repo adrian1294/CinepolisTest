@@ -1,15 +1,21 @@
-export
-class cinepolisHome{
-    constructor(URL, inputCity, inputPlace){
-        this.URL = "http://www.cinepolis.com/";
-        this.inputCity = "#cmbCiudades";
-        this.inputPlace = "#cmbComplejos";
+'use strict';
+class cinepolisPage{
+    
+    constructor(){  
+        this.url = "http://www.cinepolis.com/";
+        this.elements = {
+            "citysDropdown": "#cmbCiudades",
+            "inputPlace": "#cmbComplejos",
+            "closeBtn": "#takeover-close"
+        }
     }
-}
 
-export
-class cinepolisCartelera{
-    constructor(URL){
-    this.URL = "http://cinepolis.com/cartelera/san-pedro/";
+    getUrl() {
+        return this.url
+    }
+
+    getElement(myElement) {
+        return this.elements[myElement]
     }
 }
+export default new cinepolisPage();

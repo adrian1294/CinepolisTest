@@ -13,9 +13,10 @@
 Feature: Test
     Scenario: Cinepolis
         Given we're in Cinepolis
-        When we click "#cmbCiudades"
-        Then we set the city "San Pedro"
-        Then we set the place "Cinépolis San Pedro"
+        When we click closeBtn
+        And we click citysDropdown
+        #Then we set the city "San Pedro"
+        #Then we set the place "Cinépolis San Pedro"
         # Given we're in Cinepolis Cartelera San Pedro
         # When we set an set a range of hour between "" and ""
 
